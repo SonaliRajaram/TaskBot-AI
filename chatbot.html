@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Source Service</title>
+    <link rel="stylesheet" href="chatbotStyles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Skill Source Service</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#chatbot-icon" onclick="toggleChatbox()">Chat with Us</a>
+    </nav>
+    <div class="intro">
+        <h3>We help you to contact for Home Maintenance and Repair Services.</h3>
+        <h3>Guaranteed Skilled Services available here!!!</h3>
+        <br>
+        <br>
+    </div>
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="Images/Electrical Repairs Service.jpeg" alt="Electrical Repairs Service">
+                    <h3>Electrical Repairs Service</h3>
+                    <p>Professional electrical repair services for homes and businesses.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/HVAC Services.jpg" alt="HVAC Services">
+                    <h3>HVAC Services</h3>
+                    <p>Heating, ventilation, and air conditioning services to keep your environment comfortable.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Appliance Repair and Maintenance Service.jpg" alt="Appliance Repair and Maintenance Service">
+                    <h3>Appliance Repair and Maintenance Service</h3>
+                    <p>Expert repair and maintenance for all your household appliances.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Painting and Decorating Service.jpeg" alt="Painting and Decorating Service">
+                    <h3>Painting and Decorating Service</h3>
+                    <p>Transform your space with our painting and decorating services.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Gardening and Landscaping Service.jpeg" alt="Gardening and Landscaping Service">
+                    <h3>Gardening and Landscaping Service</h3>
+                    <p>Beautiful gardens and landscapes designed and maintained by professionals.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Plumbing Services.jpg" alt="Plumbing Services">
+                    <h3>Plumbing Services</h3>
+                    <p>Reliable plumbing services for all your needs.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/House Cleaning Service.jpg" alt="House Cleaning Service">
+                    <h3>House Cleaning Service</h3>
+                    <p>Thorough and efficient cleaning services for your home.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Carpentry Service.jpeg" alt="Carpentry Service">
+                    <h3>Carpentry Service</h3>
+                    <p>Custom carpentry work to meet your specific requirements.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Welding Service.jpg" alt="Welding Service">
+                    <h3>Welding Service</h3>
+                    <p>Professional welding services for various projects.</p>
+                </div>
+                <div class="service">
+                    <img src="Images/Masonry Service.jpg" alt="Masonry Service">
+                    <h3>Masonry Service</h3>
+                    <p>Durable and aesthetically pleasing masonry work.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="section-container">
+                <div class="section">
+                    <img src="Images/Sales_Representative.jpg" alt="Service Representative">
+                    <div>
+                        <h3>Engage in Conversation</h3>
+                        <p>Interested in our service? Just pick up the phone to chat with a member of our service team.</p>
+                        <a href="tel:+919789735701">+91 97897 35701</a>
+                    </div>
+                </div>
+    
+                <div class="section">
+                    <img src="Images/CustomerSupport.jpg" alt="Customer Support Representatives">
+                    <div>
+                        <h3>Contact Customer Support</h3>
+                        <p>Sometimes you need a little help from your friends or a customer service agent. Rest assured that we are here to support you.</p>
+                        <p>Email us at sonalirajaram1@gmail.com. We're here to help!</p>
+                    </div>
+                </div>
+
+            </div>    
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Skill Source Service. All rights reserved.</p>
+    </footer>
+
+    <div id="chatbot-icon" onclick="toggleChatbox()">
+        <img src="Images/chat icon.png" alt="Chat Icon">
+    </div>
+
+    <section id="chatbot" class="hidden">
+        <div class="chatbox-header">
+            <h2>Customer Support Chatbot</h2>
+            <button id="close-chatbox" onclick="toggleChatbox()">X</button>
+        </div>
+        <div id="chatbox"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message..." required>
+            <button onclick="sendMessage()" onkeypress="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <script src="chatbotScript.js" type="text/javascript"></script>
+</body>
+</html>
