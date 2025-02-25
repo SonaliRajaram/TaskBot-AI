@@ -29,6 +29,11 @@ TaskBot-AI/
 ```
 
 ## Installation & Setup
+download ollama software 
+```sh
+ollama pull llama3.2:1b
+ollama run llama3.2:1b
+```
 
 ### 1. Clone the repository 
 ```sh
